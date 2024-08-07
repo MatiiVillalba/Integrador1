@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+img{
+    height: 400px;
+    width: 400px;
+}
+.principal{
+    display: flex;
+    gap: 10px;
+}
+
+header{
+        background-color: #C5ACD3;
+    display: flex;
+    gap: 30px;
+}
+
+body{
+    background-color: #F6A892;
+}
+
+footer{
+    background-color: #C5ACD3;
+}
