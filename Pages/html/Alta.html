@@ -1,42 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Acceder</title>
-    <link rel="stylesheet" href="../CSS/index.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../CSS/index.css" />
+  </head>
+
+  <body>
     <header>
+      <div>
         <nav>
-            <ul>
-                <li>
-                    <a href="/index.html">AP.ideas</a>
-                </li>
-            </ul>
+          <ul class="icon conteidoCentrado">
+            <li class="conteidoCentrado">
+              <a class="icon" href="/index.html">
+                <img
+                  class="icon"
+                  src="/ASSETS/WhatsApp-Image-2024-08-07-at-18.05.34.ico"
+                  alt="icon"
+                />
+              </a>
+            </li>
+          </ul>
         </nav>
+      </div>
 
+      <div>
         <nav>
-            <ul>
-                <li>
-                    <a href="./Alta.html">Acceder</a>
-                </li>
-            </ul>
+          <ul>
+            <li><a href="./contacto.html">Contacto</a></li>
+            <li><a href="./nosotros.html">Nosotros</a></li>
+          </ul>
         </nav>
+      </div>
 
-        <div>
-            <h3>Carrito</h3>
-        </div>
-        
-
+      <div>
+        <nav>
+          <ul class="conteidoCentrado gap-15">
+            <li class="conteidoCentrado">
+              <a class="icon conteidoCentrado" href="./Alta.html">Acceder</a>
+            </li>
+            <li class="conteidoCentrado">
+              <a class="icon" href="./carrito.html"
+                ><img
+                  class="icon"
+                  src="/ASSETS/shopping-cart_90604.ico"
+                  alt="icon"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
-   
 
-    <nav>
-            <ul>
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-            </ul>
-    </nav>
+    <form onsubmit="" class="formulario" id="producto">
+      <label for="name">Nombre</label>
+      <input required type="text" name="name" />
+
+      <label for="price">Precio</label>
+      <div>$<input required type="number" name="price" /></div>
+
+      <label for="stock">Stock</label>
+      <input required type="number" name="stock" />
+
+      <label for="brad">Marca</label>
+      <input required type="text" name="brad" />
+
+      <label for="category">Categoria</label>
+      <input required type="text" name="category" />
+
+      <label for="descriptionshort">Descripcion corta</label>
+      <input required type="text" maxlength="20" name="descriptionshort" />
+
+      <label for="description">Descripcion larga</label>
+      <input  required type="text" maxlength="500" name="description" />
+
+      <label for="age">Edad desde</label>
+      <input required type="number" name="age" />
+
+      <label for="age">Edad hasta</label>
+      <input required type="number" min="12" max="99" name="age" />
+
+      <label for="free shipping">Envio sin cargo</label>
+      <input type="checkbox" name="fre shipping" />
+
+      <label for="description">file</label>
+      <input type="file" accept="image/*" name="description" />
+
+      <button class="enviar" type="submit">Enviar</button>
+    </form>
+    <footer>
+        <div class="conteidoCentradoVertical">
+            <nav>
+          <ul>
+            <li>
+              <a href="/index.html"
+                ><img
+                  class="icon redondearImagen"
+                  src="/ASSETS/WhatsApp-Image-2024-08-07-at-18.05.34.ico"
+                  alt="icon"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+        <hr />
+        <h3>AP.Ideas</h3>
+      </div>
+      <div>
+        <b>
+          Terminos y condiciones <br> Politica y privacidad <br> Boton de arrepentimiento <br> Trabaja con nosotros <br>
+        </b>
+    </div>  
+      <div>
+        <h3>Contactanos</h3>
+        <ul class="imagenesFooter">
+          <li>
+            <a target="_blank" href="https://www.instagram.com/"
+              ><img src="/ASSETS/instagram_1384015.ico" alt="instagram"
+            /></a>
+            <a target="_blank" href="https://web.whatsapp.com/"
+              ><img src="/ASSETS/whatsapp_1384007-_1_.ico" alt="instagram"
+            /></a>
+            <a target="_blank" href="https://www.instagram.com/"
+              ><img
+                src="/ASSETS/twitter-alt-circle_12107562.ico"
+                alt="instagram"
+            /></a>
+          </li>
+        </ul>
+    </div>
+</footer>
+
+<script src="../JS/index.js"></script>
 </body>
+
 </html>
